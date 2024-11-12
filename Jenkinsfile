@@ -16,11 +16,11 @@ pipeline {
                 '''
             }
         }
-        stage('CheckOut SCM') {
-        steps {
-                git 'https://github.com/akhanal77/devproject.git'
-            }
-        }
+       // stage('CheckOut SCM') {
+       // steps {
+         //       git 'https://github.com/akhanal77/devproject.git'
+           // }
+       // }
         stage('Compile & Package') {
             steps {
                 //withEnv(['JENKINS_MAVEN_AGENT_DISABLED=true']) {
